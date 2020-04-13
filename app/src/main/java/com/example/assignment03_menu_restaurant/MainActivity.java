@@ -3,6 +3,7 @@ package com.example.assignment03_menu_restaurant;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         DBHelper db = new DBHelper(getApplicationContext());
 
         ImageButton button1 = findViewById(R.id.imageButton1);
@@ -22,7 +24,16 @@ public class MainActivity extends AppCompatActivity {
         ImageButton button5 = findViewById(R.id.imageButton5);
         ImageButton button6 = findViewById(R.id.imageButton6);
 
+        MediaPlayer player = MediaPlayer.create(getApplicationContext(), R.raw.bcm);
+
         db.setData();
+
+        player.setLooping(true);
+        player.setVolume(80,80);
+        player.start();
+
+        //Intent musicService = new Intent(getApplicationContext(), MusicService.class);
+        //getApplicationContext().startService(musicService);
 
         button1.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
