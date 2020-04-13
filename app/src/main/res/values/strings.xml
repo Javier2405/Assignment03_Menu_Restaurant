@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Assignment03_Menu_Restaurant</string>
+    <string name="quesadilla">Quesadilla</string>
+    <string name="tamal">Tamal</string>
+    <string name="birria">Birria</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="taco">Taco</string>
+    <string name="hamburguesa">Hamburguesa</string>
+    <string name="back_button">Atras</string>
 </resources>
