@@ -13,7 +13,7 @@
         android:layout_height="532dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
-        android:isScrollContainer="false"
+        android:isScrollContainer="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
