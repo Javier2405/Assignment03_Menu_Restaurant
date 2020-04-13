@@ -8,13 +8,15 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="200dp"
-        android:layout_height="512dp"
+        android:layout_height="532dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
         android:isScrollContainer="false"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.645">
@@ -23,6 +25,7 @@
             android:id="@+id/imageButton1"
             android:layout_width="192dp"
             android:layout_height="168dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="@string/quesadilla"
             app:srcCompat="@drawable/quesadillas" />
 
@@ -30,6 +33,7 @@
             android:id="@+id/imageButton3"
             android:layout_width="192dp"
             android:layout_height="168dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="@string/birria"
             app:srcCompat="@drawable/birria" />
 
@@ -42,13 +46,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="197dp"
-        android:layout_height="513dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="193dp"
+        android:layout_height="532dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.985"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.651">
 
@@ -56,6 +62,7 @@
             android:id="@+id/imageButton2"
             android:layout_width="192dp"
             android:layout_height="168dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="@string/tamal"
             app:srcCompat="@drawable/tamal" />
 
@@ -63,6 +70,7 @@
             android:id="@+id/imageButton4"
             android:layout_width="192dp"
             android:layout_height="168dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="@string/hamburguesa"
             app:srcCompat="@drawable/hamburguesa" />
 
