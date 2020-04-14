@@ -24,50 +24,40 @@ public class MainActivity extends AppCompatActivity {
         ImageButton button5 = findViewById(R.id.imageButton5);
         ImageButton button6 = findViewById(R.id.imageButton6);
         db.setData();
-        MediaPlayer player = MediaPlayer.create(getApplicationContext(), R.raw.bcm);
-        player.setLooping(true);
-        player.setVolume(80,80);
-        player.start();
 
         button1.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
             changeActivity.putExtra("dish", 1);
-            player.stop();
             startActivity(changeActivity);
         });
 
         button2.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
             changeActivity.putExtra("dish", 2);
-            player.stop();
             startActivity(changeActivity);
         });
 
         button3.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
             changeActivity.putExtra("dish", 3);
-            player.stop();
             startActivity(changeActivity);
         });
 
         button4.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
             changeActivity.putExtra("dish", 4);
-            player.stop();
             startActivity(changeActivity);
         });
 
         button5.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
             changeActivity.putExtra("dish", 5);
-            player.stop();
             startActivity(changeActivity);
         });
 
         button6.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, Description_activity.class);
             changeActivity.putExtra("dish", 6);
-            player.stop();
             startActivity(changeActivity);
         });
 

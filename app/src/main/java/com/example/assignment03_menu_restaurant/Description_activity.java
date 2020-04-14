@@ -28,10 +28,7 @@ public class Description_activity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         int dish = bundle.getInt("dish");
         ImageView imagen = findViewById(R.id.imageDes);
-        MediaPlayer player = MediaPlayer.create(getApplicationContext(), R.raw.bcm);
-        player.setLooping(true);
-        player.setVolume(80,80);
-        player.start();
+
 
         switch(dish){
             case 1:
@@ -64,7 +61,6 @@ public class Description_activity extends AppCompatActivity {
 
         back_button.setOnClickListener((v)->{
             Intent changeActivity = new Intent(this, MainActivity.class);
-            player.stop();
             startActivity(changeActivity);
         });
 
