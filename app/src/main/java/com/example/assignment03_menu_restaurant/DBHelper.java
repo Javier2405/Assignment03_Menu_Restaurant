@@ -40,9 +40,9 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("name", "Quesadillas");
         values.put("description", "Plato tipico mexicano. Orden de 3" +
                 " quesadillas servidas con ensalada y frijoles. Se puede " +
-                "agregar guisado al gusto...");
+                "agregar guisado al gusto.");
         values.put("ingredients", "Tortilla, queso, guisado al gusto, lechuga y jitomate"+
-                " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
 
         database.insert("dish", null, values);
@@ -52,7 +52,10 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("name", "Tamales");
         values.put("description", "Plato tipico mexicano. Servido con " +
                 "salsa y frijoles. Se recomienda con atole");
-        values.put("ingredients", "Masa, manteca, hoja de maiz y guisado al gusto");
+        values.put("ingredients", "Masa, manteca, hoja de maiz y guisado al gusto"
+                +"\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+
 
         database.insert("dish", null, values);
         values.clear();
@@ -63,7 +66,10 @@ public class DBHelper extends SQLiteOpenHelper {
                 "con cebolla, cilantro y limon. Tambien incluye tortillas. Puede" +
                 "ser birria de chivo o de res.");
         values.put("ingredients", "Carne de preferencia (chivo o res), cebolla, cilantro, limon," +
-                " agua y condimentos");
+                " agua y condimentos"+
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+
 
         database.insert("dish", null, values);
         values.clear();
@@ -73,7 +79,10 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("description", "Hamburguesa tradicional. Servida con ensalada o papas. Se puede" +
                 "agregar guacamole o tocino como extra. Se pueden quitar ingredientes (incluye jitomate, " +
                 "cebolla, lechuga, pepinillos y queso)");
-        values.put("ingredients", "Carne molida, pan, lechuga, cebolla, jitomate, pepinillos y aderezos");
+        values.put("ingredients", "Carne molida, pan, lechuga, cebolla, jitomate, pepinillos y aderezos"+
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+
 
         database.insert("dish", null, values);
         values.clear();
@@ -83,7 +92,10 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("description", "Sandwich con ingredientes a la eleccion. Servida con ensalada o papas." +
                 " Se puede pedir de pollo, jamon, salchicha o res. Se pueden quitar ingredientes (incluye tocino," +
                 "jitomate, cebolla, lechuga, chile jalapeño y queso)");
-        values.put("ingredients", "Pan, carne a eleccion, lechuga, cebolla, jitomate, chile, queso y aderezos");
+        values.put("ingredients", "Pan, carne a eleccion, lechuga, cebolla, jitomate, chile, queso y aderezos"+
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+
 
         database.insert("dish", null, values);
         values.clear();
@@ -93,7 +105,10 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("description", "Tacos tradicionales de puesto. Orden de 3 tacos. Disponibles de res, " +
                 "pastor, lengua, arrachera, rajas, frijoles, chicharron, alambres y tripa. Servidos con " +
                 "cilantro y cebolla");
-        values.put("ingredients", "Tortilla, guisado a eleccion, cebolla y cilantro");
+        values.put("ingredients", "Tortilla, guisado a eleccion, cebolla y cilantro"
+                +"\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+
 
         database.insert("dish", null, values);
     }
